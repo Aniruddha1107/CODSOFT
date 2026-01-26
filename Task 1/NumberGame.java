@@ -3,8 +3,8 @@ import java.util.Scanner;
 public class NumberGame{
     public static void main(String args[]){
         int count=0,totalcount=0;
-        boolean playgame=true
-;        Random rd=new Random();
+        boolean playgame=true;        
+        Random rd=new Random();
         Scanner sc=new Scanner(System.in);
         System.out.println("====Welcome to Number Guess Game====");
         while(playgame){
