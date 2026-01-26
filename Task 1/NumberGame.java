@@ -1,17 +1,20 @@
 import java.util.Random;
 import java.util.Scanner;
 public class NumberGame{
-    public static void main(String args[]){
-        int count=0,totalcount=0;
+    public static void main(String[] args){
+        int count=0;
+        int totalcount=0;
         boolean playgame=true;        
         Random rd=new Random();
         Scanner sc=new Scanner(System.in);
         System.out.println("====Welcome to Number Guess Game====");
         while(playgame){
             System.out.println("Guess a Number:");
-            int guess=rd.nextInt(101);  //returns number from 0 to 100
+            int guess=rd.nextInt(101);  
+            //returns number from 0 to 100
             int attempt=0;
-            int maxAttempt=5; // limiting attempts per round
+            int maxAttempt=5; 
+            // limiting attempts per round
             boolean correctguess=false;
             System.out.println("I have picked a number between 1 to 100.");
             System.out.println("You have "+maxAttempt+" attempts to guess the number.");
