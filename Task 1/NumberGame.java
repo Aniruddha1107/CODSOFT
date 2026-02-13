@@ -22,8 +22,10 @@ public class NumberGame{
                 System.out.println("Enter Your Guess:");
                 int userguess=0;
                 try{       
-                    String input=sc.next();     //accepting into string so any value character or number can be entered
-                    userguess=Integer.parseInt(input);  //Checking if user entered valid input that is integer.
+                    String input=sc.next();     
+                    //accepting into string so any value character or number can be entered
+                    userguess=Integer.parseInt(input);  
+                    //Checking if user entered valid input that is integer.
                 }catch(NumberFormatException e){
                     System.out.println("Invalid Input! You lost 1 attempt.");
                     continue;
